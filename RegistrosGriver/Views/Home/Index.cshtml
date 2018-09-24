@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Registro";
+}
+
+<div class="jumbotron">
+    <h1>BIENVENIDO AL SISTEMA DE REGISTRO DE USUARIOS</h1>
+    <p class="lead">Usted puede ingresar, actualizar, borrar o modificar los datos de sus clientes.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Nuevo Cliente</h2>
+        <p>
+            Registre a un cliente nuevo.
+        </p>
+        @Html.ActionLink("Registrar", "AgregarEditarCliente", "Home", new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-3">
+        <h2>Lista de clientes</h2>
+        <p>
+            Consulte la lista de los clientes registrados hasta el momento, asi como actualizar su información o borrarlo
+        </p>
+        @Html.ActionLink("Lista", "ListaClientes", "Home", new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-3">
+        <h2>Nuevo Contacto</h2>
+        <p>
+            Registre los datos de contacto de un contacto
+        </p>
+        @Html.ActionLink("Registrar", "AgregarEditarContacto", "Home", new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-3">
+        <h2>Lista de contactos</h2>
+        <p>
+            Consulte la lista de los contactos registrados hasta el momento, asi como actualizar su información o borrarlo
+        </p>
+        @Html.ActionLink("Lista", "ListaContactos", "Home", new { @class = "btn btn-primary" })
+    </div>
